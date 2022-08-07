@@ -1,0 +1,513 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Classes {% endblock %}
+
+{% block body %}
+
+<html lang="en">
+
+    <body>
+
+          <style>
+            body{
+            background-image: url({{ url_for('static', filename='classb.jpg') }});
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            }
+          </style>
+
+        <div class="row">
+         <div class="col">
+          <div class="elem">
+           <h3 class="clh3">Hero</h3>
+           <p style="text-align: center;"><img class="class_img" src="{{ url_for('static', filename='hero.jpg') }}"></p>
+           <div class="table-cl">
+            <table class="class_table">
+             <tbody>
+              <tr>
+               <td style="text-align: center;" colspan="2">Level 7</td>
+              </tr>
+              <tr>
+               <td>Vigor 14</td>
+               <td>Dexterity 9</td>
+              </tr>
+              <tr>
+               <td>Mind 9</td>
+               <td>Intelligence 7</td>
+              </tr>
+              <tr>
+               <td>Endurance 12</td>
+               <td>Faith 8</td>
+              </tr>
+              <tr>
+               <td>Strength 16</td>
+               <td>Arcane 11</td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+
+         <div class="col">
+          <div class="elem">
+           <h3 class="clh3">Bandit</h3>
+           <p style="text-align: center;"><img class="class_img" src="{{ url_for('static', filename='bandit.jpg') }}"></p>
+           <div class="table-cl">
+            <table class="class_table">
+             <tbody>
+              <tr>
+               <td style="text-align: center;" colspan="2">Level 5</td>
+              </tr>
+              <tr>
+               <td>Vigor 10</td>
+               <td>Dexterity 13</td>
+              </tr>
+              <tr>
+               <td>Mind 11</td>
+               <td>Intelligence 9</td>
+              </tr>
+              <tr>
+               <td>Endurance 10</td>
+               <td>Faith 8</td>
+              </tr>
+              <tr>
+               <td>Strength 9</td>
+               <td>Arcane 14</td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+
+         <div class="col">
+          <div class="elem">
+           <h3 class="clh3">Astrologer</h3>
+           <p style="text-align: center;"><img class="class_img" src="{{ url_for('static', filename='astrologer.jpg') }}"></p>
+           <div class="table-cl">
+            <table class="class_table">
+             <tbody>
+              <tr>
+               <td style="text-align: center;" colspan="2">Level 6</td>
+              </tr>
+              <tr>
+               <td>Vigor 9</td>
+               <td>Dexterity 12</td>
+              </tr>
+              <tr>
+               <td>Mind 15</td>
+               <td>Intelligence 16</td>
+              </tr>
+              <tr>
+               <td>Endurance 9</td>
+               <td>Faith 7</td>
+              </tr>
+              <tr>
+               <td>Strength 8</td>
+               <td>Arcane 9</td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+
+         <div class="col">
+          <div class="elem">
+           <h3 class="clh3">Warrior</h3>
+           <p style="text-align: center;"><img class="class_img" src="{{ url_for('static', filename='warrior.jpg') }}"></p>
+           <div class="table-cl">
+            <table class="class_table">
+             <tbody>
+              <tr>
+               <td style="text-align: center;" colspan="2">Level 8</td>
+              </tr>
+              <tr>
+               <td>Vigor 11</td>
+               <td>Dexterity 16</td>
+              </tr>
+              <tr>
+               <td>Mind 12</td>
+               <td>Intelligence 10</td>
+              </tr>
+              <tr>
+               <td>Endurance 11</td>
+               <td>Faith 8</td>
+              </tr>
+              <tr>
+               <td>Strength 10</td>
+               <td>Arcane 9</td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="row">
+          <div class="col">
+            <div class="elem">
+             <h3 class="clh3">Prisoner</h3>
+             <p style="text-align: center;"><img class="class_img" src="{{ url_for('static', filename='prisoner.jpg') }}"></p>
+             <div class="table-cl">
+              <table class="class_table">
+             <tbody>
+              <tr>
+               <td style="text-align: center;" colspan="2">Level 9</td>
+              </tr>
+              <tr>
+               <td>Vigor 11</td>
+               <td>Dexterity 14</td>
+              </tr>
+              <tr>
+               <td>Mind 12</td>
+               <td>Intelligence 14</td>
+              </tr>
+              <tr>
+               <td>Endurance 11</td>
+               <td>Faith 6</td>
+              </tr>
+              <tr>
+               <td>Strength 11</td>
+               <td>Arcane 9</td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+
+         <div class="col">
+          <div class="elem">
+           <h3 class="clh3">Confessor</h3>
+           <p style="text-align: center;"><img class="class_img" src="{{ url_for('static', filename='confessor.jpg') }}"></p>
+           <div class="table-cl">
+            <table class="class_table">
+             <tbody>
+              <tr>
+               <td style="text-align: center;" colspan="2">Level 10</td>
+              </tr>
+              <tr>
+               <td>Vigor 10</td>
+               <td>Dexterity 12</td>
+              </tr>
+              <tr>
+               <td>Mind 13</td>
+               <td>Intelligence 9</td>
+              </tr>
+              <tr>
+               <td>Endurance 10</td>
+               <td>Faith 14</td>
+              </tr>
+              <tr>
+               <td>Strength 12</td>
+               <td>Arcane 9</td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+
+         <div class="col">
+          <div class="elem">
+           <h3 class="clh3">Wretch</h3>
+           <p style="text-align: center;"><img class="class_img" src="{{ url_for('static', filename='wretch.jpg') }}"></p>
+           <div class="table-cl">
+            <table class="class_table">
+             <tbody>
+              <tr>
+               <td style="text-align: center;" colspan="2">Level 1</td>
+              </tr>
+              <tr>
+               <td>Vigor 10</td>
+               <td>Dexterity 10</td>
+              </tr>
+              <tr>
+               <td>Mind 10</td>
+               <td>Intelligence 10</td>
+              </tr>
+              <tr>
+               <td>Endurance 10</td>
+               <td>Faith 10</td>
+              </tr>
+              <tr>
+               <td>Strength 10</td>
+               <td>Arcane 10</td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+
+         <div class="col">
+          <div class="elem">
+           <h3 class="clh3">Vagabond</h3>
+           <p style="text-align: center;"><img class="class_img" src="{{ url_for('static', filename='vagabond.jpg') }}"></p>
+           <div class="table-cl">
+            <table class="class_table">
+             <tbody>
+              <tr>
+               <td style="text-align: center;" colspan="2">Level 9</td>
+              </tr>
+              <tr>
+               <td>Vigor 15</td>
+               <td>Dexterity 13</td>
+              </tr>
+              <tr>
+               <td>Mind 10</td>
+               <td>Intelligence 9</td>
+              </tr>
+              <tr>
+               <td>Endurance 11</td>
+               <td>Faith 9</td>
+              </tr>
+              <tr>
+               <td>Strength 14</td>
+               <td>Arcane 7</td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+        </div>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="row">
+         <div class="col">
+          <div class="elem">
+           <h3 class="clh3">Prophet</h3>
+           <p style="text-align: center;"><img class="class_img" src="{{ url_for('static', filename='prophet.jpg') }}"></p>
+           <div class="table-cl">
+            <table class="class_table">
+             <tbody>
+              <tr>
+               <td style="text-align: center;" colspan="2">Level 7</td>
+              </tr>
+              <tr>
+               <td>Vigor 10</td>
+               <td>Dexterity 10</td>
+              </tr>
+              <tr>
+               <td>Mind 14</td>
+               <td>Intelligence 7</td>
+              </tr>
+              <tr>
+               <td>Endurance 8</td>
+               <td>Faith 16</td>
+              </tr>
+              <tr>
+               <td>Strength 11</td>
+               <td>Arcane 10</td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+
+         <div class="col">
+          <div class="elem">
+           <h3 class="clh3">Samurai</h3>
+           <p style="text-align: center;"><img class="class_img" src="{{ url_for('static', filename='samurai.jpg') }}"</p>
+           <div class="table-cl">
+            <table class="class_table">
+             <tbody>
+              <tr>
+               <td style="text-align: center;" colspan="2">Level 9</td>
+              </tr>
+              <tr>
+               <td>Vigor 12</td>
+               <td>Dexterity 15</td>
+              </tr>
+              <tr>
+               <td>Mind 11</td>
+               <td>Intelligence 9</td>
+              </tr>
+              <tr>
+               <td>Endurance 13</td>
+               <td>Faith 8</td>
+              </tr>
+              <tr>
+               <td>Strength 12</td>
+               <td>Arcane 8</td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+          </div>
+         </div>
+        </div>
+
+
+
+        <h3 class="text-align-center" style="color:#C9B76B;">Elden Ring Classes Comparison</h3>
+        <p class="text-align-center" style="color:white;">This table is useful tool for identifying the relative strengths and weaknesses of Elden Ring's starting classes:</p>
+        <div>
+         <div>
+          <table class="stats" style="color:white;">
+           <thead>
+            <tr>
+             <th style="text-align: center;">Class</th>
+             <th style="text-align: center;">LVL</th>
+             <th style="text-align: center;">VIG</th>
+             <th style="text-align: center;">MND</th>
+             <th style="text-align: center;">END</th>
+             <th style="text-align: center;">STR</th>
+             <th style="text-align: center;">DEX</th>
+             <th style="text-align: center;">INT</th>
+             <th style="text-align: center;">FTH</th>
+             <th style="text-align: center;">ARC</th>
+             <th style="text-align: center;">Total</th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+             <td class="tdclass" style="text-align: center;"> <h4>Hero</h4> </td>
+             <td style="text-align: center;">7</td>
+             <td style="text-align: center;">14</td>
+             <td style="text-align: center;"><span style="color: #ff0000;">9</span></td>
+             <td style="text-align: center;">12</td>
+             <td style="text-align: center;"><span style="color: #00ff00;">16</span></td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;"><span style="color: #ff0000;">7</span></td>
+             <td style="text-align: center;">8</td>
+             <td style="text-align: center;">11</td>
+             <td style="text-align: center;">86</td>
+            </tr>
+            <tr>
+             <td class="tdclass" style="text-align: center;"> <h4>Bandit</h4> </td>
+             <td style="text-align: center;">5</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">11</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;">13</td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;">8</td>
+             <td style="text-align: center;"><span style="color: #00ff00;">14</span></td>
+             <td style="text-align: center;">84</td>
+            </tr>
+            <tr>
+             <td class="tdclass" style="text-align: center;"> <h4>Astrologer</h4> </td>
+             <td style="text-align: center;">6</td>
+             <td style="text-align: center;"><span style="color: #ff0000;">9</span></td>
+             <td style="text-align: center;"><span style="color: #00ff00;">15</span></td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;"><span style="color: #ff0000;">8</span></td>
+             <td style="text-align: center;">12</td>
+             <td style="text-align: center;"><span style="color: #00ff00;">16</span></td>
+             <td style="text-align: center;">7</td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;">85</td>
+            </tr>
+            <tr>
+             <td class="tdclass" style="text-align: center;"> <h4>Warrior</h4> </td>
+             <td style="text-align: center;">8</td>
+             <td style="text-align: center;">11</td>
+             <td style="text-align: center;">12</td>
+             <td style="text-align: center;">11</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;"><span style="color: #00ff00;">16</span></td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">8</td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;">87</td>
+            </tr>
+            <tr>
+             <td class="tdclass" style="text-align: center;"> <h4>Prisoner</h4> </td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;">11</td>
+             <td style="text-align: center;">12</td>
+             <td style="text-align: center;">11</td>
+             <td style="text-align: center;">11</td>
+             <td style="text-align: center;">14</td>
+             <td style="text-align: center;">14</td>
+             <td style="text-align: center;"><span style="color: #ff0000;">6</span></td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;">88</td>
+            </tr>
+            <tr>
+             <td class="tdclass" style="text-align: center;"> <h4>Confessor</h4> </td>
+             <td style="text-align: center;"><span style="color: #ff0000;">10</span></td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">13</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">12</td>
+             <td style="text-align: center;">12</td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;">14</td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;"><span style="color: #00ff00;">89</span></td>
+            </tr>
+            <tr>
+             <td class="tdclass" style="text-align: center;"> <h4>Wretch</h4> </td>
+             <td style="text-align: center;"><span style="color: #00ff00;">1</span></td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;"><span style="color: #ff0000;">80</span></td>
+            </tr>
+            <tr>
+             <td class="tdclass" style="text-align: center;"> <h4>Vagabond</h4> </td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;"><span style="color: #00ff00;">15</span></td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">11</td>
+             <td style="text-align: center;">14</td>
+             <td style="text-align: center;">13</td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;"><span style="color: #ff0000;">7</span></td>
+             <td style="text-align: center;">88</td>
+            </tr>
+            <tr>
+             <td class="tdclass" style="text-align: center;"> <h4>Prophet</h4> </td>
+             <td style="text-align: center;">7</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">14</td>
+             <td style="text-align: center;"><span style="color: #ff0000;">8</span></td>
+             <td style="text-align: center;">11</td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;"><span style="color: #ff0000;">7</span></td>
+             <td style="text-align: center;"><span style="color: #00ff00;">16</span></td>
+             <td style="text-align: center;">10</td>
+             <td style="text-align: center;">86</td>
+            </tr>
+            <tr>
+             <td class="tdclass" style="text-align: center;"> <h4>Samurai</h4> </td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;">12</td>
+             <td style="text-align: center;">11</td>
+             <td style="text-align: center;"><span style="color: #00ff00;">13</span></td>
+             <td style="text-align: center;">12</td>
+             <td style="text-align: center;">15</td>
+             <td style="text-align: center;">9</td>
+             <td style="text-align: center;">8</td>
+             <td style="text-align: center;">8</td>
+             <td style="text-align: center;">88</td>
+            </tr>
+           </tbody>
+          <tfoot></tfoot></table>
+         </div>
+        </div>
+
+
+          </div>
+    </body>
+    {% endblock %}
+</html>

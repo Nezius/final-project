@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Map {% endblock %}
+
+{% block body %}
+
+<html lang="en">
+
+
+
+    <body>
+
+      <style>
+        body{
+        background-image: url({{ url_for('static', filename='tree.jpg') }});;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        }
+      </style>
+
+          <div class="map">
+            <img src="{{ url_for('static', filename='map.jpg') }}">
+           </div>
+
+
+    </body>
+    {% endblock %}
+</html>
